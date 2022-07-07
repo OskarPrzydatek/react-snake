@@ -1,11 +1,10 @@
 import React from "react";
+import { globalStyle } from "./styles/globalStyle";
 
 export default function App(): React.ReactElement {
-  return (
-    <div className="App">
+  React.useEffect(() => {
+    globalStyle();
+  }, []);
 
-    </div>
-  );
+  return <div>App</div>;
 }
-
-
